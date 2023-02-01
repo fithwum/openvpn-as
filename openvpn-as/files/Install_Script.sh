@@ -20,8 +20,8 @@ sleep 1
 # Run OpenVPN-as server.
 echo " "
 echo "INFO ! ."
-systemctl -f enable openvpn-server@server.service
-systemctl start openvpn-server@server.service
-systemctl status openvpn-server@server.service
+service -f enable openvpn-server@server.service
+service start openvpn-server@server.service
+service status openvpn-server@server.service
 
 exit
