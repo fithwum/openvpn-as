@@ -20,8 +20,8 @@ sleep 1
 # Run OpenVPN-as server.
 echo " "
 echo "INFO ! ."
-service -f enable openvpn-server@server.service
-service start openvpn-server@server.service
-service status openvpn-server@server.service
+service openvpn-server@server.service -f enable
+service openvpn-server@server.service start
+service openvpn-server@server.service status
 
 exit
