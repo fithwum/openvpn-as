@@ -9,7 +9,7 @@ ARG INSTALL_SCRIPT=https://raw.githubusercontent.com/fithwum/openvpn-as/master/o
 # Install java-17 & Dependencies.
 RUN apt-get -y update \
 	&& apt-get -y --fix-broken install \
-	&& apt-get install -y software-properties-common \
+	&& apt-get install -y software-properties-common ca-certificates wget net-tools gnupg \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& update-ca-certificates -f;
