@@ -23,5 +23,4 @@ echo "INFO ! ."
 # systemctl openvpn-as -f enable
 openvpn
 
-
 exit
