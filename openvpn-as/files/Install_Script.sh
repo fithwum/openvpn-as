@@ -21,7 +21,6 @@ sleep 1
 echo " "
 echo "INFO ! ."
 # systemctl openvpn-as -f enable
-systemctl start openvpn-as
-systemctl status openvpn-as
+exec openvpn-as
 
 exit
